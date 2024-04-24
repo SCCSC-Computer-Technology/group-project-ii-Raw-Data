@@ -7,35 +7,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/css/style.css">
 </head>
 <body class="gradient-background">
     <video id="video-background" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="~/path/to/your-video.mp4" type="video/mp4">
     </video>
-    <header>
-        <h1 class="neon-green-gradient-text">Welcome to Our Sports Website</h1>
-        <nav>
-            <ul>
-                <li><a asp-page="/Index">Home</a></li>
-                <li><a asp-page="/WNBA">WNBA</a></li>
-                <li><a asp-page="/NBA">NBA</a></li>
-                <li><a asp-page="/Baseball">Baseball</a></li>
-                <li><a asp-page="/Search"> Global Search</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome to The Future of Sports</h2>
-            
-        </section>
-    </main>
-    <footer>
-        <p>&copy; @DateTime.Now.Year RawData Sports</p>
-    </footer>
+    <div class="container">
+        <h2>Welcome to The Future of Sports</h2>
+        <!-- Add more body content here -->
+    </div>
 </body>
 </html>

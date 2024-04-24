@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Johnny\\source\\repos\\RawDataWebapp\\RawDataWebapp\\RawDataWebapp.csproj": {}
+    "G:\\RawDataWebapp (2)\\RawDataWebapp\\RawDataWebapp\\RawDataWebapp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Johnny\\source\\repos\\RawDataWebapp\\RawDataWebapp\\RawDataWebapp.csproj": {
+    "G:\\RawDataWebapp (2)\\RawDataWebapp\\RawDataWebapp\\RawDataWebapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Johnny\\source\\repos\\RawDataWebapp\\RawDataWebapp\\RawDataWebapp.csproj",
+        "projectUniqueName": "G:\\RawDataWebapp (2)\\RawDataWebapp\\RawDataWebapp\\RawDataWebapp.csproj",
         "projectName": "RawDataWebapp",
-        "projectPath": "C:\\Users\\Johnny\\source\\repos\\RawDataWebapp\\RawDataWebapp\\RawDataWebapp.csproj",
-        "packagesPath": "C:\\Users\\Johnny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Johnny\\source\\repos\\RawDataWebapp\\RawDataWebapp\\obj\\",
+        "projectPath": "G:\\RawDataWebapp (2)\\RawDataWebapp\\RawDataWebapp\\RawDataWebapp.csproj",
+        "packagesPath": "C:\\Users\\xenov\\.nuget\\packages\\",
+        "outputPath": "G:\\RawDataWebapp (2)\\RawDataWebapp\\RawDataWebapp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Johnny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\xenov\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,21 +51,33 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "toastr": {
+              "target": "Package",
+              "version": "[2.1.1, )"
             }
           },
           "imports": [
@@ -88,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200-preview.23624.5/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

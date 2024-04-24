@@ -13,6 +13,8 @@ namespace RawDataWebapp.Pages
         private readonly AppDbContext _context;
         public bool SearchPerformed { get; set; }
 
+        public string Title { get; set; }
+
         public WNBAModel(AppDbContext context)
         {
             _context = context;
@@ -30,6 +32,8 @@ namespace RawDataWebapp.Pages
        
         public async Task OnGetAsync()
         {
+            ViewData["Title"] = "Welcome to Our WNBA Page";
+
             IQueryable<WNBAPlayer> playersQuery = from m in _context.WNBAPlayers select m;
 
             if (!string.IsNullOrEmpty(SearchString))

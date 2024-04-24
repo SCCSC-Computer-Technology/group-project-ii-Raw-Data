@@ -7,28 +7,47 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/RawDataWebapp.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1030;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+    </style>
+    @RenderSection("CustomHead", required: false)
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">RawDataWebapp</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        @{
+            var pageTitle = ViewData["Title"] ?? "Default Title";
+        }
+        <h1 class="neon-green-gradient-text">@pageTitle</h1>
+        <nav>
+            <ul>
+                <li><a asp-page="/Index">Home</a></li>
+                <li><a asp-page="/WNBA">WNBA</a></li>
+                <li><a asp-page="/NBA">NBA</a></li>
+                <li><a asp-page="/Baseball">Baseball</a></li>
+                <li><a asp-page="/Search"> Global Search</a></li>
+            </ul>
         </nav>
+        @RenderSection("Header", required: false)
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -36,16 +55,15 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - RawDataWebapp - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
+    @RenderSection("Footer", required: false)
     @await RenderSectionAsync("Scripts", required: false)
+    <footer>
+        <p>© @DateTime.Now.Year RawData Sports</p>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\RawDataWebapp\\group-project-ii-Raw-Data\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E414014-B9CF-481C-B3A6-D028E6FD70F0}|RawDataWebapp\\RawDataWebapp.csproj|g:\\rawdatawebapp\\group-project-ii-raw-data\\rawdatawebapp\\pages\\wnba.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E414014-B9CF-481C-B3A6-D028E6FD70F0}|RawDataWebapp\\RawDataWebapp.csproj|solutionrelative:rawdatawebapp\\pages\\wnba.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E414014-B9CF-481C-B3A6-D028E6FD70F0}|RawDataWebapp\\RawDataWebapp.csproj|g:\\rawdatawebapp\\group-project-ii-raw-data\\rawdatawebapp\\pages\\wnba.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E414014-B9CF-481C-B3A6-D028E6FD70F0}|RawDataWebapp\\RawDataWebapp.csproj|solutionrelative:rawdatawebapp\\pages\\wnba.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WNBA.cshtml.cs",
+              "DocumentMoniker": "G:\\RawDataWebapp\\group-project-ii-Raw-Data\\RawDataWebapp\\Pages\\WNBA.cshtml.cs",
+              "RelativeDocumentMoniker": "RawDataWebapp\\Pages\\WNBA.cshtml.cs",
+              "ToolTip": "G:\\RawDataWebapp\\group-project-ii-Raw-Data\\RawDataWebapp\\Pages\\WNBA.cshtml.cs*",
+              "RelativeToolTip": "RawDataWebapp\\Pages\\WNBA.cshtml.cs*",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T19:56:35.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WNBA.cshtml",
+              "DocumentMoniker": "G:\\RawDataWebapp\\group-project-ii-Raw-Data\\RawDataWebapp\\Pages\\WNBA.cshtml",
+              "RelativeDocumentMoniker": "RawDataWebapp\\Pages\\WNBA.cshtml",
+              "ToolTip": "G:\\RawDataWebapp\\group-project-ii-Raw-Data\\RawDataWebapp\\Pages\\WNBA.cshtml",
+              "RelativeToolTip": "RawDataWebapp\\Pages\\WNBA.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-24T19:56:30.79Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

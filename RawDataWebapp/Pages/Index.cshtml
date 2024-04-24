@@ -1,47 +1,88 @@
 ﻿@page
 @model RawDataWebapp.Pages.LoginModel
-<!DOCTYPE html>
-<html lang="en">
+@{
+    ViewData["Title"] = "Login and Registration - Sports Website";
+}
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login and Registration - Sports Website</title>
+    <style>
+        body {
+            padding-top: 150px;
+            padding-bottom: 70px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1030;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
-    <!-- Display success and error messages -->
+<!-- Display success and error messages -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <p style="color: green;">@TempData["SuccessMessage"]</p>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <p style="color: red;">@TempData["ErrorMessage"]</p>
+}
+
+<div style="display: flex; justify-content: space-between;">
+    <!-- Login Form -->
+    <div style="flex: 1;">
+        <h2>Login</h2>
+        <form method="post" asp-page-handler="Login">
+            <div>
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="Username">
+            </div>
+            <div>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="Password">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Registration Form -->
+    <div style="flex: 1;">
+        <h2>Register</h2>
+        <form method="post" asp-page-handler="Register">
+            <div>
+                <label for="reg-username">Username:</label>
+                <input type="text" id="reg-username" name="RegisterUsername">
+            </div>
+            <div>
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" name="RegisterPassword">
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</div>
+
+<script>
     @if (TempData["SuccessMessage"] != null)
     {
-        <p style="color: green;">@TempData["SuccessMessage"]</p>
+        <text>
+            toastr.success('@TempData["RegistrationSuccessMessage"]');
+        </text>
     }
     @if (TempData["ErrorMessage"] != null)
     {
-        <p style="color: red;">@TempData["ErrorMessage"]</p>
+        <text>
+            toastr.error('@TempData["RegistrationErrorMessage"]');
+        </text>
     }
-
-    <!-- Login Form -->
-    <form method="post" asp-page-handler="Login">
-        <div>
-            <label for="login-username">Username:</label>
-            <input type="text" id="login-username" name="Username">
-        </div>
-        <div>
-            <label for="login-password">Password:</label>
-            <input type="password" id="login-password" name="Password">
-        </div>
-        <button type="submit">Login</button>
-    </form>
-
-    <!-- Registration Form -->
-    <form method="post" asp-page-handler="Register">
-        <div>
-            <label for="reg-username">Username:</label>
-            <input type="text" id="reg-username" name="RegisterUsername">
-        </div>
-        <div>
-            <label for="reg-password">Password:</label>
-            <input type="password" id="reg-password" name="RegisterPassword">
-        </div>
-        <button type="submit">Register</button>
-    </form>
-</body>
-</html>
+</script>

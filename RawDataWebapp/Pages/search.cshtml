@@ -9,23 +9,11 @@
     <link rel="stylesheet" href="~/style.css">
 </head>
 <body class="gradient-background">
-    <header>
-        <h1 class="neon-green-gradient-text">Search Results</h1>
-        <nav>
-            <ul>
-                <li><a asp-page="/Index">Home</a></li>
-                <li><a asp-page="/Wnba">WNBA</a></li>
-                <li><a asp-page="/Nba">NBA</a></li>
-                <li><a asp-page="/Baseball">Baseball</a></li>
-                <li><a asp-page="/Search" class="active">Global Search</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
         <section id="search-section">
             <form method="post">
                 <input asp-for="PlayerName" type="text" placeholder="Search for players...." autofocus>
-                <button type="submit" id="search-button">Search</button>
+                <button type="submit" id="search-button">Search <i class="bi bi-search"></i></button>
             </form>
             <div id="search-results">
                 @if (Model.Players != null && Model.Players.Count > 0)
@@ -44,8 +32,5 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024  RawData</p>
-    </footer>
 </body>
 </html>

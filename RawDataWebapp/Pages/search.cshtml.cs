@@ -7,6 +7,8 @@ namespace RawDataWebapp.Pages
 {
     public class SearchModel : PageModel
     {
+        public string Title { get; set; }
+
         private readonly SportsDbClient _sportsDbClient;
 
         [BindProperty]
@@ -22,6 +24,8 @@ namespace RawDataWebapp.Pages
 
         public async Task<IActionResult> OnPostAsync()
         {
+            ViewData["Title"] = "Search ";
+
             if (!string.IsNullOrEmpty(PlayerName))
             {
                 Players = await _sportsDbClient.SearchPlayersByNameAsync(PlayerName);

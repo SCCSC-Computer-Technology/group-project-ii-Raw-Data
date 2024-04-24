@@ -7,6 +7,8 @@ namespace RawDataWebapp.Pages
 {
     public class LoginModel : PageModel
     {
+        public string Title { get; set; }
+
         private readonly UserService _userService;
 
         public LoginModel(UserService userService)

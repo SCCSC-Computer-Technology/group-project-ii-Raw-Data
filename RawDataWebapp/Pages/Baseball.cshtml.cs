@@ -10,6 +10,8 @@ namespace RawDataWebapp.Pages
 {
     public class BaseballModel : PageModel
     {
+        public string Title { get; set; }
+
         private readonly AppDbContext _context;
 
         public BaseballModel(AppDbContext context)
@@ -28,6 +30,8 @@ namespace RawDataWebapp.Pages
 
         public async Task OnGetAsync()
         {
+            ViewData["Title"] = "Major League Baseball (MLB)";
+
             IQueryable<BaseballPlayer> playersQuery = from m in _context.BaseballPlayers select m;
 
             if (!string.IsNullOrEmpty(SearchString))

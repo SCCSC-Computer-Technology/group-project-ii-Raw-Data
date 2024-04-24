@@ -10,6 +10,8 @@ namespace RawDataWebapp.Pages
 {
     public class NBAModel : PageModel
     {
+        public string Title { get; set; }
+
         private readonly AppDbContext _context;
         public bool SearchPerformed { get; set; }
 
@@ -30,6 +32,8 @@ namespace RawDataWebapp.Pages
 
         public async Task OnGetAsync()
         {
+            ViewData["Title"] = "NBA - Data";
+
             IQueryable<NBAPlayer> playersQuery = from m in _context.NBAPlayers select m;
 
 

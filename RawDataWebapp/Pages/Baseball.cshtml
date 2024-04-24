@@ -10,18 +10,6 @@
     <link rel="stylesheet" href="~/css/style.css">
 </head>
 <body class="gradient-background">
-    <header>
-        <h1 class="neon-green-gradient-text">Baseball Teams and Players</h1>
-        <nav>
-            <ul>
-                <li><a asp-page="/Index">Home</a></li>
-                <li><a asp-page="/WNBA">WNBA</a></li>
-                <li><a asp-page="/NBA">NBA</a></li>
-                <li><a asp-page="/Baseball" class="active">Baseball</a></li>
-                <li><a asp-page="/Search">Global Search</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
         <section>
             <form method="get">
@@ -31,7 +19,6 @@
             <div class="show-all-players-wrapper">
                 <a asp-page="./Baseball" asp-route-SortOrder="name_desc" class="show-all-players">Show All Players</a>
             </div>
-           
                 <thead>
                     <tr>
                         <th>
@@ -100,9 +87,6 @@
             </table>
         </section>
     </main>
-    <footer>
-        <p>&copy; @DateTime.Now.Year Sports Website</p>
-    </footer>
 </body>
 </html>
 
