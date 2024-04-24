@@ -1,3 +1,4 @@
+using Blazored.Toast;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the DI container.
 builder.Services.AddRazorPages();
+builder.Services.AddBlazoredToast();
 
 // Register custom services for sports database and user management.
 builder.Services.AddScoped<SportsDbClient>();

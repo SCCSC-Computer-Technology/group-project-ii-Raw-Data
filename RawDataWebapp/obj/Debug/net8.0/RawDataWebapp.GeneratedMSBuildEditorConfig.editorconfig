@@ -9,71 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RawDataWebapp
 build_property.RootNamespace = RawDataWebapp
-build_property.ProjectDir = G:\RawDataWebapp (2)\RawDataWebapp\RawDataWebapp\
+build_property.ProjectDir = G:\RawDataWebapp\group-project-ii-Raw-Data3\RawDataWebapp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = G:\RawDataWebapp (2)\RawDataWebapp\RawDataWebapp
+build_property.MSBuildProjectDirectory = G:\RawDataWebapp\group-project-ii-Raw-Data3\RawDataWebapp
 build_property._RazorSourceGeneratorDebug = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/Baseball.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/Baseball.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFzZWJhbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/Error.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/Index.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/Index2.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/Index2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/Log/Login.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/Log/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/Log/Register.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/Log/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nXFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/NBA.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/NBA.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTkJBLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/Privacy.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/search.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/Shared/_Notification.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/Shared/_Notification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/WNBA.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/WNBA.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV05CQS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/_ViewImports.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/_ViewStart.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/RawDataWebapp (2)/RawDataWebapp/RawDataWebapp/Pages/Shared/_Layout.cshtml]
+[G:/RawDataWebapp/group-project-ii-Raw-Data3/RawDataWebapp/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-eyv0hlbqvy

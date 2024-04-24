@@ -1,7 +1,9 @@
+using Blazored.Toast.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RawDataWebapp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,13 +13,16 @@ namespace RawDataWebapp.Pages
     public class WNBAModel : PageModel
     {
         private readonly AppDbContext _context;
+        private readonly IToastService _toastService;
+
         public bool SearchPerformed { get; set; }
 
         public string Title { get; set; }
 
-        public WNBAModel(AppDbContext context)
+        public WNBAModel(AppDbContext context, IToastService toastService) // Modify this line
         {
             _context = context;
+            _toastService = toastService;
         }
 
         [BindProperty(SupportsGet = true)]
@@ -29,10 +34,22 @@ namespace RawDataWebapp.Pages
 
         public IList<WNBAPlayer> WNBAPlayers { get; set; } = new List<WNBAPlayer>();
         public bool LoadData { get; set; } = false;
-       
+
         public async Task OnGetAsync()
         {
             ViewData["Title"] = "Welcome to Our WNBA Page";
+
+            List<string> messages = new List<string>
+            {
+                "Welcome to the WNBA page!",
+                "Check out the latest stats!",
+                "See any players you recognize?",
+            };
+
+            // Select a random message and show the toast
+            Random rand = new Random();
+            string randomMessage = messages[rand.Next(messages.Count)];
+            _toastService.ShowInfo(randomMessage);
 
             IQueryable<WNBAPlayer> playersQuery = from m in _context.WNBAPlayers select m;
 

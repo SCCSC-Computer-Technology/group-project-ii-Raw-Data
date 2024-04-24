@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RawDataWebapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22bb0adac09233b4dfc45618e9c80551d62e752b")]
 [assembly: System.Reflection.AssemblyProductAttribute("RawDataWebapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RawDataWebapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

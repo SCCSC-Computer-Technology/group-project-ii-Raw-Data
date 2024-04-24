@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\RawDataWebapp (2)\\RawDataWebapp\\RawDataWebapp\\RawDataWebapp.csproj": {}
+    "G:\\RawDataWebapp\\group-project-ii-Raw-Data3\\RawDataWebapp\\RawDataWebapp.csproj": {}
   },
   "projects": {
-    "G:\\RawDataWebapp (2)\\RawDataWebapp\\RawDataWebapp\\RawDataWebapp.csproj": {
+    "G:\\RawDataWebapp\\group-project-ii-Raw-Data3\\RawDataWebapp\\RawDataWebapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\RawDataWebapp (2)\\RawDataWebapp\\RawDataWebapp\\RawDataWebapp.csproj",
+        "projectUniqueName": "G:\\RawDataWebapp\\group-project-ii-Raw-Data3\\RawDataWebapp\\RawDataWebapp.csproj",
         "projectName": "RawDataWebapp",
-        "projectPath": "G:\\RawDataWebapp (2)\\RawDataWebapp\\RawDataWebapp\\RawDataWebapp.csproj",
+        "projectPath": "G:\\RawDataWebapp\\group-project-ii-Raw-Data3\\RawDataWebapp\\RawDataWebapp.csproj",
         "packagesPath": "C:\\Users\\xenov\\.nuget\\packages\\",
-        "outputPath": "G:\\RawDataWebapp (2)\\RawDataWebapp\\RawDataWebapp\\obj\\",
+        "outputPath": "G:\\RawDataWebapp\\group-project-ii-Raw-Data3\\RawDataWebapp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Blazored.Toast": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.4, )"

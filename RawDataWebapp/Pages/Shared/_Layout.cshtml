@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Blazored.Toast
+@using Blazored.Toast.Services
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -61,6 +64,9 @@
 
     @RenderSection("Footer", required: false)
     @await RenderSectionAsync("Scripts", required: false)
+
+    <BlazoredToasts Position="ToastPosition.BottomRight" Timeout="10" IconType="IconType.FontAwesome" SuccessIcon="fa fa-thumbs-up" />
+
     <footer>
         <p>© @DateTime.Now.Year RawData Sports</p>
     </footer>

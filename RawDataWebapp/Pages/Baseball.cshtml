@@ -1,5 +1,6 @@
 ﻿@page
 @model RawDataWebapp.Pages.BaseballModel
+@inject Blazored.Toast.Services.IToastService ToastService
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +34,7 @@
                         </th> 
                             </tr>
                             </thead>
-                       <table> 
+                       <table style="text-align: left;">
                         <th>PlayerName</th>
                         <th>Position</th>
                         <th>Games Played</th>
@@ -83,9 +84,22 @@
                             <td>@player.TeamName</td>
                         </tr>
                     }
+                    }
                 </tbody>
             </table>
         </section>
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <script>
+                ToastService.ShowSuccess(TempData["SuccessMessage"].ToString());
+            </script>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <script>
+                ToastService.ShowError(TempData["ErrorMessage"].ToString());
+            </script>
+        }
     </main>
 </body>
 </html>
