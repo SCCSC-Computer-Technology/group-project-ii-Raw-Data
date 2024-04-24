@@ -1,0 +1,108 @@
+﻿@page
+@model RawDataWebapp.Pages.BaseballModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball - Sports Website</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body class="gradient-background">
+    <header>
+        <h1 class="neon-green-gradient-text">Baseball Teams and Players</h1>
+        <nav>
+            <ul>
+                <li><a asp-page="/Index">Home</a></li>
+                <li><a asp-page="/WNBA">WNBA</a></li>
+                <li><a asp-page="/NBA">NBA</a></li>
+                <li><a asp-page="/Baseball" class="active">Baseball</a></li>
+                <li><a asp-page="/Search">Global Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form method="get">
+                <input type="text" asp-for="SearchString" placeholder="Search Baseball players...">
+                <input type="submit" value="Search">
+            </form>
+            <div class="show-all-players-wrapper">
+                <a asp-page="./Baseball" asp-route-SortOrder="name_desc" class="show-all-players">Show All Players</a>
+            </div>
+           
+                <thead>
+                    <tr>
+                        <th>
+                            <a asp-page="./Baseball" asp-route-SortOrder="@(Model.SortOrder == "PlayeName_desc" ? "PlayerName" : "PlayerName_desc")" class="sort-button">Player Name</a>
+                        </th>
+                        
+                        <th>
+                            <a asp-page="./Baseball" asp-route-SortOrder="@(Model.SortOrder == "Position_desc" ? "Position" : "Position_desc")" class="sort-button">Games Played</a>
+                        </th>
+                        <th>
+                            <a asp-page="./Baseball" asp-route-SortOrder="@(Model.SortOrder == "TeamName_desc" ? "TeamName" : "TeamName_desc")" class="sort-button">Team Name</a>
+                        </th> 
+                            </tr>
+                            </thead>
+                       <table> 
+                        <th>PlayerName</th>
+                        <th>Position</th>
+                        <th>Games Played</th>
+                        <th>At Bats</th>
+                        <th>Runs</th>
+                        <th>Hits</th>
+                        <th>Doubles</th>
+                        <th>Triple</th>
+                        <th>Home Run</th>
+                        <th>Runs Batted In</th>
+                        <th>Total Bases</th>
+                        <th>Walks</th>
+                        <th>Strikeouts</th>
+                        <th>Stolen Bases</th>
+                        <th>Batting Average</th>
+                        <th>On-Base Percentage</th>
+                        <th>Slugging Percentage</th>
+                        <th>OPS</th>
+                        <th>WAR</th>
+                        <th>TeamName</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var player in Model.BaseballPlayers)
+                    {
+                        <tr>
+                            <td>@player.PlayerName</td>
+                            <td>@player.Position</td>
+                            <td>@player.GamesPlayed</td>
+                            <td>@player.AtBats</td>
+                            <td>@player.Runs</td>
+                            <td>@player.Hits</td>
+                            <td>@player.Doubles</td>
+                            <td>@player.Triples</td>
+                            <td>@player.HomeRuns</td>
+                            <td>@player.RunsBattedIn</td>
+                            <td>@player.TotalBases</td>
+                            <td>@player.Walks</td>
+                            <td>@player.Strikeouts</td>
+                            <td>@player.StolenBases</td>
+                            <td>@player.BattingAverage</td>
+                            <td>@player.OnBasePercentage</td>
+                            <td>@player.SluggingPercentage</td>
+                            <td>@player.OPS</td>
+                            <td>@player.WAR</td>
+                            <td>@player.TeamName</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; @DateTime.Now.Year Sports Website</p>
+    </footer>
+</body>
+</html>
+

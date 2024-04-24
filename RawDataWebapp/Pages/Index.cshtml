@@ -1,0 +1,47 @@
+﻿@page
+@model RawDataWebapp.Pages.LoginModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration - Sports Website</title>
+</head>
+<body>
+    <!-- Display success and error messages -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <p style="color: green;">@TempData["SuccessMessage"]</p>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <p style="color: red;">@TempData["ErrorMessage"]</p>
+    }
+
+    <!-- Login Form -->
+    <form method="post" asp-page-handler="Login">
+        <div>
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" name="Username">
+        </div>
+        <div>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="Password">
+        </div>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Registration Form -->
+    <form method="post" asp-page-handler="Register">
+        <div>
+            <label for="reg-username">Username:</label>
+            <input type="text" id="reg-username" name="RegisterUsername">
+        </div>
+        <div>
+            <label for="reg-password">Password:</label>
+            <input type="password" id="reg-password" name="RegisterPassword">
+        </div>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

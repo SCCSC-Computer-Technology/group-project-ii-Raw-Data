@@ -1,0 +1,120 @@
+﻿@page
+@model RawDataWebapp.Pages.WNBAModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WNBA - Sports Website</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body class="gradient-background">
+    <header>
+        <h1 class="neon-green-gradient-text">WNBA Teams and Players</h1>
+        <nav>
+            
+            <ul>
+                <li><a asp-page="/Index">Home</a></li>
+                <li><a asp-page="/WNBA">WNBA</a></li>
+                <li><a asp-page="/NBA">NBA</a></li>
+                <li><a asp-page="/Baseball">Baseball</a></li>
+                <li><a asp-page="/Search"> Global Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form method="get">
+                <input type="text" asp-for="SearchString">
+                <input type="submit" value="Search">
+            </form>
+            <div class="show-all-players-wrapper">
+                <a asp-page="./WNBA" asp-route-SortOrder="@("name_desc")" class="show-all-players">Show All Players</a>
+            </div>
+            <thead>
+                <tr>
+                    <th>
+                        <a asp-page="./WNBA" asp-route-SortOrder="@(Model.SortOrder == "PlayerName_desc" ? "PlayerName" : "PlayerName_desc")" class="sort-button">Sort by Player Name</a>
+                    </th>
+                    <th>
+                        <a asp-page="./WNBA" asp-route-SortOrder="@(Model.SortOrder == "GamesPlayed_desc" ? "GamesPlayed" : "GamesPlayed_desc")" class="sort-button">Sort by Games Played</a>
+                    </th>
+                    <th>
+                        <a asp-page="./WNBA" asp-route-SortOrder="@(Model.SortOrder == "TeamName_desc" ? "TeamName" : "TeamName_desc")" class="sort-button">Sort by Team Name</a>
+                    </th>
+                    <!-- Repeat for other sortable columns as needed -->
+                </tr>
+            </thead>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>PlayerName</th>
+                        <th>Games Played</th>
+                        <th>Games Started</th>
+                        <th>Minutes</th>
+                        <th>Points</th>
+                        <th>Offensive Rebounds</th>
+                        <th>Defensive Rebounds</th>
+                        <th>Total Rebounds</th>
+                        <th>Assist</th>
+                        <th>Steals</th>
+                        <th>Blocks</th>
+                        <th>Turnovers</th>
+                        <th>Personal Fouls</th>
+                        <th>Assist To Turnovers</th>
+                        <th>Field Goals Made</th>
+                        <th>Field Goals Attempted</th>
+                        <th>Field Goal Percentage</th>
+                        <th>Three Points Made</th>
+                        <th>Three Points Attempted</th>
+                        <th>Three Points Percentage</th>
+                        <th>Free Throws Made</th>
+                        <th>Free Throw Attempted</th>
+                        <th>Free Throw Percentage</th>
+                        <th>Position</th>
+                        <th>TeamName</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var player in Model.WNBAPlayers)
+                    {
+                        <tr>
+                            <td>@player.PlayerName</td>
+                            <td>@player.GamesPlayed</td>
+                            <td>@player.GamesStarted</td>
+                            <td>@player.Minutes</td>
+                            <td>@player.Points</td>
+                            <td>@player.OffensiveRebounds</td>
+                            <td>@player.DefensiveRebounds</td>
+                            <td>@player.TotalRebounds</td>
+                            <td>@player.Assist</td>
+                            <td>@player.Steals</td>
+                            <td>@player.Blocks</td>
+                            <td>@player.Turnovers</td>
+                            <td>@player.PersonalFouls</td>
+                            <td>@player.AssistToTurnovers</td>
+                            <td>@player.FieldGoalsMade</td>
+                            <td>@player.FieldGoalsAttempted</td>
+                            <td>@player.FieldGoalPercentage</td>
+                            <td>@player.ThreePointsMade</td>
+                            <td>@player.ThreePointsAttempted</td>
+                            <td>@player.ThreePointsPercentage</td>
+                            <td>@player.FreeThrowsMade</td>
+                            <td>@player.FreeThrowAttempted</td>
+                            <td>@player.FreeThrowPercentage</td>
+                            <td>@player.Position</td>
+                            <td>@player.TeamName</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; @DateTime.Now.Year RawData Sports</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+﻿@page
+@model RawDataWebapp.Pages.SearchModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search -Word </title>
+    <link rel="stylesheet" href="~/style.css">
+</head>
+<body class="gradient-background">
+    <header>
+        <h1 class="neon-green-gradient-text">Search Results</h1>
+        <nav>
+            <ul>
+                <li><a asp-page="/Index">Home</a></li>
+                <li><a asp-page="/Wnba">WNBA</a></li>
+                <li><a asp-page="/Nba">NBA</a></li>
+                <li><a asp-page="/Baseball">Baseball</a></li>
+                <li><a asp-page="/Search" class="active">Global Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="search-section">
+            <form method="post">
+                <input asp-for="PlayerName" type="text" placeholder="Search for players...." autofocus>
+                <button type="submit" id="search-button">Search</button>
+            </form>
+            <div id="search-results">
+                @if (Model.Players != null && Model.Players.Count > 0)
+                {
+                    <ul>
+                        @foreach (var player in Model.Players)
+                        {
+                            <li>@player.strPlayer - @player.strTeam - @player.strPosition</li>
+                        }
+                    </ul>
+                }
+                else if (Model.Players != null)
+                {
+                    <p>No players found. Try another search.</p>
+                }
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024  RawData</p>
+    </footer>
+</body>
+</html>
